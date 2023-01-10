@@ -21,6 +21,9 @@ def inference(model_inputs:dict) -> dict:
     
     # Run the model
     result = model(prompt)
+   
+    for i in range(200):
+        print(i, "hi logs")
 
     # Return the results as a dictionary
     return result
